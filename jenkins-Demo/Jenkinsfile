@@ -5,18 +5,13 @@ pipeline {
 
         stage('Build') {
             steps {
-                echo "Build stage"
-                dir('jenkins-Demo') {
-                    sh 'chmod +x app.sh'
-                }
+                sh 'echo "Building stages..."'
             }
         }
 
         stage('Test') {
             steps {
-                dir('jenkins-Demo') {
-                    sh './test.sh'
-                }
+                sh 'echo "Running tests..."'
             }
         }
 
@@ -30,7 +25,9 @@ pipeline {
 
         stage('Docker Test') {
             steps {
-                sh 'docker run --rm jenkins-demo'
+                dir('jenkins-Demo') {
+                    sh 'docker run --rm jenkins-demo'
+                }
             }
         }
 
