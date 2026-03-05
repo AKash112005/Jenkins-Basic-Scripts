@@ -1,0 +1,35 @@
+pipeline {
+    agent any
+
+    stages {
+
+        stage('Build') {
+            steps {
+                echo "Build stage"
+                sh 'chmod +x app.sh'
+            }
+        }
+
+        stage('Test') {
+            steps {
+                echo "Test stage"
+                sh './test.sh'
+            }
+        }
+
+        stage('Docker Build') {
+            steps {
+                echo "Building Docker Image"
+                sh 'docker build -t jenkins-demo .'
+            }
+        }
+
+        stage('Docker Test') {
+            steps {
+                echo "Running Docker Container"
+                sh 'docker run --rm jenkins-demo'
+            }
+        }
+
+    }
+}
