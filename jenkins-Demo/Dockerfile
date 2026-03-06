@@ -4,4 +4,4 @@ WORKDIR /app
 
 COPY . .
 
-CMD ["bash","app.sh"]
+RUN chmod +x app.sh
