@@ -6,4 +6,4 @@ COPY . .
 
 RUN app.sh
 
-CMD ["./app.sh"]
+CMD ["app.sh"]
