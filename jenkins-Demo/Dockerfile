@@ -2,6 +2,6 @@ FROM ubuntu:latest
 
 WORKDIR /app
 
-COPY . .
+COPY . . 
 
 RUN chmod +x app.sh
