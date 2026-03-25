@@ -3,7 +3,7 @@ Project Overview
 
       This project demonstrates a basic Jenkins Pipeline setup that pulls code from a Git repository and executes pipeline stages. The pipeline script is written to verify Jenkins integration with a repository and to test both Declarative and Scripted Pipeline styles.
       
-      The repository contains sample code and pipeline scripts used to validate the Jenkins build process.
+      The repository contains sample code and pipeline scripts used to validate the Jenkins build process .
 
 Objectives
 
