@@ -109,5 +109,6 @@ Learning Outcome
     Experience with both declarative and scripted pipelines.
     
     Basic CI/CD workflow implementation.
+    
 
     
