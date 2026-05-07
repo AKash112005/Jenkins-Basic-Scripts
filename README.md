@@ -6,7 +6,7 @@ Project Overview
       The repository contains sample code and pipeline scripts used to validate the Jenkins build process .
 
 Objectives
-
+   
     Configure Jenkins to connect with a Git repository.
     
     Execute pipeline scripts using Jenkins.
